@@ -1,0 +1,16 @@
+
+<div class="container d-flex justify-content-center mt-100">  
+    <div class="row" *ngFor="let List of lists.slice(0, 4)">
+        <div class="col-md-7">
+           <div class="card">
+               <div class="card-body text-center">
+                 <img src="https://img.icons8.com/bubbles/100/000000/laptop.png">
+                 <h4>Contact us</h4>
+                 <p>{{List.taskName}}</p>
+               </div>
+           </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+<div class="container d-flex justify-content-center mt-100 mb-100">
+    <div class="row">
+        <div class="col-md-12" *ngFor="let comment of comments">
+          <div class="card">
+                <div class="comment-widgets m-b-20">
+                    <div class="d-flex flex-row comment-row">
+                        <div class="p-2"><span class="round"><img src="https://i.imgur.com/uIgDDDd.jpg" alt="user" width="50"></span></div>
+                        <div class="comment-text w-100">
+                            <h5>{{comment.commentHeader}}</h5>
+                            <div class="comment-footer">
+                                <span class="date"><!-- Tarih gelicek --></span>
+                                <span class="action-icons">
+                                    <a href="#" data-abc="true"><i class="fa fa-pencil">{{comment.starRating}}</i></a>
+                                    <a href="#" data-abc="true"><i class="fa fa-rotate-right">{{comment.follower}}</i></a>
+                                    <a href="#" data-abc="true"><i class="fa fa-heart">{{comment.taste}}</i></a>
+                                </span>
+                            </div>
+                            <p class="m-b-5 m-t-10">{{comment.commentText}}</p>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
